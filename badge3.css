@@ -1,0 +1,49 @@
+
+div{
+    margin-top: 380px;
+
+}
+body{
+    background-color: gray;
+    min-width: 1024px;
+    min-height: 100%;
+}
+
+h2 {
+    position: relative;
+    top 10px;
+    bottom: 5px;
+    height: 250px;
+    width: 400px;
+    text-align: center;
+    background-color: red;
+    color: white;
+    border-radius: 25px;
+    z-index: 1;
+    font-size: 28 px;
+    font-family: bradley hand, cursive;
+    margin: 0 auto;
+    box-shadow: 5px 8px #696969;
+    
+  
+  }
+ 
+  h1{
+    position: absolute;
+    font-size: 40px;
+    top: 55px;
+    height: 150px;
+    bottom: 2px;
+    width: 400px;
+    text-align: center;
+    background-color: white;
+    z-index: 2;
+    line-height: 150px;
+    font-family: bradley hand, cursive;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+   
+  }
