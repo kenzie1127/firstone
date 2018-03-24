@@ -1,0 +1,379 @@
+Last login: Thu Mar  8 21:10:41 on ttys002
+McKenzies-MacBook-Pro:~ kenzie1127$ clone https://github.com/kenzie1127/firstone.git
+-bash: clone: command not found
+McKenzies-MacBook-Pro:~ kenzie1127$ git clone https://github.com/kenzie1127/firstone.git
+fatal: destination path 'firstone' already exists and is not an empty directory.
+McKenzies-MacBook-Pro:~ kenzie1127$ git clone https://github.com/kenzie1127/special-giggle.git
+Cloning into 'special-giggle'...
+remote: Counting objects: 20, done.
+remote: Compressing objects: 100% (17/17), done.
+remote: Total 20 (delta 3), reused 16 (delta 2), pack-reused 0
+Unpacking objects: 100% (20/20), done.
+McKenzies-MacBook-Pro:~ kenzie1127$ git remote add origin https://github.com/kenzie1127/special-giggle.git
+fatal: remote origin already exists.
+McKenzies-MacBook-Pro:~ kenzie1127$ git remote -v
+origin	https://github.com/try-git/try_git.git (fetch)
+origin	https://github.com/try-git/try_git.git (push)
+McKenzies-MacBook-Pro:~ kenzie1127$ git checkout -b group_project
+Switched to a new branch 'group_project'
+McKenzies-MacBook-Pro:~ kenzie1127$ cd /Users/kenzie1127/Documents/Group\ project 
+McKenzies-MacBook-Pro:Group project kenzie1127$ git status
+On branch group_project
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	../../#.profile#
+	../../.CFUserTextEncoding
+	../../.Trash/
+	../../.adobe/
+	../../.bash_history
+	../../.bash_profile
+	../../.bash_sessions/
+	../../.bashrc
+	../../.config/
+	../../.cups/
+	../../.gitconfig
+	../../.grasp_settings/
+	../../.network_backups/
+	../../.node_repl_history
+	../../.npm/
+	../../.oracle_jre_usage/
+	../../.rnd
+	../../.rssowl2/
+	../../.vscode/
+	../../Account.class
+	../../Account.java
+	../../Account1.class
+	../../Account1.java
+	../../AccountTest.class
+	../../AccountTest.java
+	../../Applications/
+	../../Assignment 1.java
+	../../Assignment.class
+	../../Assignment.java
+	../../Creative Cloud Files (archived) (1)/
+	../../Creative Cloud Files/
+	../../DemoPrint.class
+	../../DemoPrint.java
+	../../Desktop/
+	../
+	../../Downloads/
+	../../FriendsList.class
+	../../FriendsList.java
+	../../FriendsTest.class
+	../../FriendsTest.java
+	../../Guess1.java
+	../../Guess2.class
+	../../Guess2.java
+	../../Guess3.class
+	../../Guess3.java
+	../../LabArraysClass.class
+	../../LabArraysClass.java
+	../../Library/
+	../../Lion.java
+	../../MetricConverter.class
+	../../MetricConverter.java
+	../../MetricConverter3.class
+	../../MetricConverter3.java
+	../../MetricCoverter2.class
+	../../MetricCoverter2.java
+	../../MetricCoverterTest.class
+	../../MetricCoverterTest.java
+	../../Movies/
+	../../Music/
+	../../MyFirstProgram.class
+	../../MyFirstProgram.java
+	../../Pictures/
+	../../Public/
+	../../Random1.class
+	../../Random1.java
+	../../RetailSales.class
+	../../RetailSales.java
+	../../SavingsAccount.class
+	../../SavingsAccount.java
+	../../SavingsAccount2.java
+	../../SavingsAccountTester.class
+	../../SavingsAccountTester.java
+	../../SavingsTest.class
+	../../SavingsTest.java
+	../../SimpleMath.class
+	../../SimpleMath.java
+	../../UMLet/
+	../../firstone/
+	../../fluffy-spoon/
+	../../ibt_application.log
+	../../ibtsa.log
+	../../math practice.java
+	../../method1.java
+	../../oasys.log
+	../../special-giggle/
+	../../summary.txt
+	../../tuna.class
+	../../tuna.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+McKenzies-MacBook-Pro:Group project kenzie1127$ cd firstone
+-bash: cd: firstone: No such file or directory
+McKenzies-MacBook-Pro:Group project kenzie1127$ git remote
+origin
+McKenzies-MacBook-Pro:Group project kenzie1127$ git remote add upstream
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=<push|fetch>]
+                          set up remote as a mirror to push to or fetch from
+
+McKenzies-MacBook-Pro:Group project kenzie1127$ git remote add upstream https://github.com/kenzie1127/special-giggle.git
+McKenzies-MacBook-Pro:Group project kenzie1127$ git remote
+origin
+upstream
+McKenzies-MacBook-Pro:Group project kenzie1127$ git fetch upstream
+warning: no common commits
+remote: Counting objects: 20, done.
+remote: Compressing objects: 100% (17/17), done.
+remote: Total 20 (delta 3), reused 16 (delta 2), pack-reused 0
+Unpacking objects: 100% (20/20), done.
+From https://github.com/kenzie1127/special-giggle
+ * [new branch]      master     -> upstream/master
+Auto packing the repository in background for optimum performance.
+See "git help gc" for manual housekeeping.
+McKenzies-MacBook-Pro:Group project kenzie1127$ clear
+
+McKenzies-MacBook-Pro:Group project kenzie1127$ git clone https://github.com/kenzie1127/special-giggle.git
+Cloning into 'special-giggle'...
+remote: Counting objects: 20, done.
+remote: Compressing objects: 100% (17/17), done.
+remote: Total 20 (delta 3), reused 16 (delta 2), pack-reused 0
+Unpacking objects: 100% (20/20), done.
+McKenzies-MacBook-Pro:Group project kenzie1127$ git remote add jkotrba https://github.com/jkotrba/special-giggle.git
+McKenzies-MacBook-Pro:Group project kenzie1127$ git fetch jkotrba
+remote: Counting objects: 4, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 4 (delta 2), reused 4 (delta 2), pack-reused 0
+Unpacking objects: 100% (4/4), done.
+From https://github.com/jkotrba/special-giggle
+ * [new branch]      master     -> jkotrba/master
+Auto packing the repository in background for optimum performance.
+See "git help gc" for manual housekeeping.
+error: The last gc run reported the following. Please correct the root cause
+and remove .git/gc.log.
+Automatic cleanup will not be performed until the file is removed.
+
+warning: There are too many unreachable loose objects; run 'git prune' to remove them.
+
+McKenzies-MacBook-Pro:Group project kenzie1127$ git prune
+McKenzies-MacBook-Pro:Group project kenzie1127$ git status
+On branch group_project
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	../../#.profile#
+	../../.CFUserTextEncoding
+	../../.Trash/
+	../../.adobe/
+	../../.bash_history
+	../../.bash_profile
+	../../.bash_sessions/
+	../../.bashrc
+	../../.config/
+	../../.cups/
+	../../.gitconfig
+	../../.grasp_settings/
+	../../.network_backups/
+	../../.node_repl_history
+	../../.npm/
+	../../.oracle_jre_usage/
+	../../.rnd
+	../../.rssowl2/
+	../../.viminfo
+	../../.vscode/
+	../../Account.class
+	../../Account.java
+	../../Account1.class
+	../../Account1.java
+	../../AccountTest.class
+	../../AccountTest.java
+	../../Applications/
+	../../Assignment 1.java
+	../../Assignment.class
+	../../Assignment.java
+	../../Creative Cloud Files (archived) (1)/
+	../../Creative Cloud Files/
+	../../DemoPrint.class
+	../../DemoPrint.java
+	../../Desktop/
+	../
+	../../Downloads/
+	../../FriendsList.class
+	../../FriendsList.java
+	../../FriendsTest.class
+	../../FriendsTest.java
+	../../Guess1.java
+	../../Guess2.class
+	../../Guess2.java
+	../../Guess3.class
+	../../Guess3.java
+	../../LabArraysClass.class
+	../../LabArraysClass.java
+	../../Library/
+	../../Lion.java
+	../../MetricConverter.class
+	../../MetricConverter.java
+	../../MetricConverter3.class
+	../../MetricConverter3.java
+	../../MetricCoverter2.class
+	../../MetricCoverter2.java
+	../../MetricCoverterTest.class
+	../../MetricCoverterTest.java
+	../../Movies/
+	../../Music/
+	../../MyFirstProgram.class
+	../../MyFirstProgram.java
+	../../Pictures/
+	../../Public/
+	../../Random1.class
+	../../Random1.java
+	../../RetailSales.class
+	../../RetailSales.java
+	../../SavingsAccount.class
+	../../SavingsAccount.java
+	../../SavingsAccount2.java
+	../../SavingsAccountTester.class
+	../../SavingsAccountTester.java
+	../../SavingsTest.class
+	../../SavingsTest.java
+	../../SimpleMath.class
+	../../SimpleMath.java
+	../../UMLet/
+	../../firstone/
+	../../fluffy-spoon/
+	../../ibt_application.log
+	../../ibtsa.log
+	../../math practice.java
+	../../method1.java
+	../../oasys.log
+	../../special-giggle/
+	../../summary.txt
+	../../tuna.class
+	../../tuna.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+McKenzies-MacBook-Pro:Group project kenzie1127$ cd ls
+-bash: cd: ls: No such file or directory
+McKenzies-MacBook-Pro:Group project kenzie1127$ cd special-giggle
+McKenzies-MacBook-Pro:special-giggle kenzie1127$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+McKenzies-MacBook-Pro:special-giggle kenzie1127$ git remote add jkotrba https://github.com/jkotrba/special-giggle.git
+McKenzies-MacBook-Pro:special-giggle kenzie1127$ git fetch jkotrba
+remote: Counting objects: 4, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 4 (delta 2), reused 4 (delta 2), pack-reused 0
+Unpacking objects: 100% (4/4), done.
+From https://github.com/jkotrba/special-giggle
+ * [new branch]      master     -> jkotrba/master
+McKenzies-MacBook-Pro:special-giggle kenzie1127$ git pull jkotrba master
+From https://github.com/jkotrba/special-giggle
+ * branch            master     -> FETCH_HEAD
+Updating 974500b..c15940a
+Fast-forward
+ README.md  | 13 +++++++++++++
+ quotes.txt |  3 +--
+ 2 files changed, 14 insertions(+), 2 deletions(-)
+McKenzies-MacBook-Pro:special-giggle kenzie1127$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+McKenzies-MacBook-Pro:special-giggle kenzie1127$ git push
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 510 bytes | 510.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/kenzie1127/special-giggle.git
+   974500b..c15940a  master -> master
+McKenzies-MacBook-Pro:special-giggle kenzie1127$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	index.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+McKenzies-MacBook-Pro:special-giggle kenzie1127$ git fetch
+McKenzies-MacBook-Pro:special-giggle kenzie1127$ git push
+Everything up-to-date
+McKenzies-MacBook-Pro:special-giggle kenzie1127$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	index.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+McKenzies-MacBook-Pro:special-giggle kenzie1127$ git add .
+McKenzies-MacBook-Pro:special-giggle kenzie1127$ git commit -m "own css file"
+[master ead0028] own css file
+ 2 files changed, 59 insertions(+), 59 deletions(-)
+ create mode 100644 index.css
+McKenzies-MacBook-Pro:special-giggle kenzie1127$ git push
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 778 bytes | 778.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/kenzie1127/special-giggle.git
+   c15940a..ead0028  master -> master
+McKenzies-MacBook-Pro:special-giggle kenzie1127$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+McKenzies-MacBook-Pro:special-giggle kenzie1127$ git remove -v
+git: 'remove' is not a git command. See 'git --help'.
+
+The most similar command is
+	remote
+McKenzies-MacBook-Pro:special-giggle kenzie1127$ git remote -v
+jkotrba	https://github.com/jkotrba/special-giggle.git (fetch)
+jkotrba	https://github.com/jkotrba/special-giggle.git (push)
+origin	https://github.com/kenzie1127/special-giggle.git (fetch)
+origin	https://github.com/kenzie1127/special-giggle.git (push)
+McKenzies-MacBook-Pro:special-giggle kenzie1127$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+McKenzies-MacBook-Pro:special-giggle kenzie1127$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+McKenzies-MacBook-Pro:special-giggle kenzie1127$ 
